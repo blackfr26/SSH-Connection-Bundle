@@ -1,0 +1,22 @@
+{
+    "name" : "desarrollohosting/sshconnectionbundle",
+    "description" : "Symfony Bundle or connecting to multiple servers that uses the same authentication mechanism.",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Tomas Ceruti",
+        "email" : "tceruti@hosting.cl"
+    },{
+        "name" : "Alvaro Flaño",
+        "email" : "alvaro@hosting.cl"
+    }],
+    "keywords" : ["ssh", "bundle"],
+    "license" : ["MIT"],
+    "require" : {
+        "phpseclib/phpseclib" : "~2.0.2"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "DesarrolloHosting\\SshConnectionBundle\\" : ""
+        }
+    }
+}

@@ -1,0 +1,6 @@
+services:        
+    ssh_connection:
+        class: DesarrolloHosting\SshConnectionBundle\Service\SshConnection
+        arguments: [%ssh_connection.user%, %ssh_connection.private_key_file%, %ssh_connection.passphrase%, %ssh_connection.default_ports%, %ssh_connection.connection_timeout%, %ssh_connection.exec_timeout%, "@logger"]
+        tags:
+            - { name: monolog.logger, channel: ssh_connection }
